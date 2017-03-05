@@ -1,6 +1,6 @@
 box: heroku/jvm
 
-services
+services:
   - id: postgres
     env:
       POSTGRES_USER: appuser
