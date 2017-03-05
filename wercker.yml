@@ -1,0 +1,14 @@
+box: heroku/jvm
+
+services
+  - id: postgres
+    env:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: appcred
+
+build:
+  steps:
+    - script:
+      name: app test
+      code: |
+        activator test
